@@ -1,44 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#E0F7FA">
 
-    <TextView
-        android:id="@+id/cityTextView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="City Name"
-        android:textSize="24sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tempTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Temperature: --"
-        android:textSize="20sp"
-        android:layout_below="@id/cityTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#00796B"
+            android:paddingBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/descTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Description: --"
-        android:textSize="20sp"
-        android:layout_below="@id/tempTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter city name"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
 
-    <Button
-        android:id="@+id/fetchWeatherButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Weather"
-        android:layout_below="@id/descTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-</RelativeLayout>
+        <Button
+            android:id="@+id/fetchWeatherButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Weather"
+            android:background="#00796B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City: "
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/tempTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/descTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/sunriseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+
+        <TextView
+            android:id="@+id/sunsetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#004D40"/>
+    </LinearLayout>
+</ScrollView>
